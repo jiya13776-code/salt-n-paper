@@ -1,26 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    
 }
-
-body {
-    background-color: #000;
+@font-face{
+    font-family: "inter";
+    src:url(./font/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face{
+    font-family:"futurak";
+    src:url(./font/futurak.ttf);
+}
+@font-face{
+    font-family:"apercu";
+    src: url(./font/Apercu\ regular.otf);
 }
 
 .navbar {
-    height: 80px;
-    background-color: #000;
+    width: 100%;
+    padding: 20px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    background-color : black;
 }
 
 .logo img {
@@ -30,71 +34,486 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 16px;
+    
 }
 
 .nav-links a:hover {
-    color: #ccc;
+    color: red;
 }
 
 .nav-buttons {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
-.btn {
-    padding: 10px 18px;
+.franchise-btn {
+    padding: 10px 20px;
+    border: 2px solid white;
     border-radius: 25px;
+    color: white;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    transition: 0.3s ease;
 }
 
-.btn.outline {
-    color: #fff;
-    border: 1px solid #fff;
+.franchise-btn:hover {
+    background: white;
+    color: black;
 }
 
-.btn.filled {
-    background-color: #e50914;
-    color: #fff;
-    border: none;
+.order-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background:red;
+    color: white;
+    text-decoration: none;
 }
 
-
+.order-btn:hover {
+    background:red;
+}
 
 /* banner */
-.banner{
+ .banner{
     width: 100%;
-}
-.banner image{
-    width: 100%; 
-}
-.brands{
+ }
+ .banner img{
+    width: 100%;
+ }
+ .brand{
     width: 100%;
     background-color: black;
     color: white;
-    padding: 20px 50px ;
+    padding: 100px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.container{
+    gap: 30px;
+ }
+ .brand .contant{
+    text-align: center;
+ }
+ .container{
     display: flex;
-    width: 100%;
-}
-.box1{
+    justify-content: center;
+    gap: 30px;
+ }
+ .box1{
     width: 20%;
-}
-.box1 .boximg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ }
+ .box1 img{
     width: 100%;
+  background-color: white;
 }
-.box1 .btn{
+#salt{
+    font-family: futurak;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.brand h1{
+    font-family: inter;
+    font-size: 52px;
+     font-style: normal;
+    font-weight: 400;
+}
+.brand button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 20px 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius:50px ;
+}
+/* franchise section */
+
+.franchise{
     width: 100%;
+    background-color: black;
+    color: white;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
 }
+.franchise .content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.franchise .isb{
+    display: flex;
+    gap: 100px;
+    padding: 40px;
+    margin-bottom: 24px;
+}
+.franchise .second{
+    font-family: futurak;
+}
+
+.isb h1{
+    font-family: 'apercu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.franchise .islam {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.bg {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+}
+
+/* express section start */
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+}
+.content .second{
+      font-family: futurak;
+      font-size:50px;
+}
+
+
+.branches {
+  display: flex;
+  gap: 30px;
+  padding: 60px;
+  background-color: #0f0f0f;
+  color: white
+}
+
+.branch-card {
+  background: #0f0f0f;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.branch-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.city {
+  color: red;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.branch-card h2 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.branch-card h2 span {
+  font-weight: normal;
+}
+.branch{
+    align-items: center;
+    flex-direction: column;
+}
+.branch img{
+    width: 25%;
+}
+
+.info {
+  color: #ccc;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.branch-card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.branch-card button:hover {
+  background: red;
+  border-color: red;
+} 
+
+/* village section start */
+
+.villages {
+  padding: 60px 80px;
+}
+
+.villages h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+  font-family: futurak;
+}
+
+.villages h1 span {
+  font-weight: normal;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.image-box {
+  display: flex;
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-box {
+  flex: 1;
+}
+
+.city {
+  color: #e63946;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.text-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-box h2 span {
+  font-weight: bold;
+}
+
+.info {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+/* map section start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.franchise-section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.franchise-section h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.franchise-section h1 span {
+  display: block;
+  font-size: 42px;
+}
+
+.franchise-section h1 small {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  color: #000;
+  padding: 35px 20px;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.opening {
+  color: red;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card h3 span {
+  font-weight: normal;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* footer section start */
+.footer {
+  background: #0b0b0b;
+  color: #ccc;
+  padding: 60px 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  color: #fff;
+  margin: 20px 0 5px;
+  font-size: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a,
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer ul li a:hover,
+.footer a:hover {
+  color: #e50914;
+}
+
+.policies a {
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background: #e50914;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.store-buttons img {
+  width: 140px;
+  margin-top: 10px;
+  display: block;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+
